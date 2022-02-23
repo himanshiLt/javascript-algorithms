@@ -25,6 +25,7 @@ _Read this in other languages:_
 [_Bahasa Indonesia_](README.id-ID.md),
 [_Українська_](README.uk-UA.md),
 [_Arabic_](README.ar-AR.md),
+[_Tiếng Việt_](README.vi-VN.md),
 [_Deutsch_](README.de-DE.md)
 
 *☝ Note that this project is meant to be used for learning and researching purposes
@@ -206,6 +207,7 @@ algorithm is an abstraction higher than a computer program.
   * `B` [Best Time To Buy Sell Stocks](src/algorithms/uncategorized/best-time-to-buy-sell-stocks) - divide and conquer and one-pass examples
   * `A` [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
   * `A` [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
+  * `A` [Maximum Subarray](src/algorithms/sets/maximum-subarray)
 * **Dynamic Programming** - build up a solution using previously found sub-solutions
   * `B` [Fibonacci Number](src/algorithms/math/fibonacci)
   * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
@@ -277,6 +279,8 @@ rm -rf ./node_modules
 npm i
 ```
 
+Also make sure that you're using a correct Node version (`>=14.16.0`). If you're using [nvm](https://github.com/nvm-sh/nvm) for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
+
 **Playground**
 
 You may play with data-structures and algorithms in `./src/playground/playground.js` file and write
@@ -305,15 +309,15 @@ Source: [Big O Cheat Sheet](http://bigocheatsheet.com/).
 
 Below is the list of some of the most used Big O notations and their performance comparisons against different sizes of the input data.
 
-| Big O Notation | Computations for 10 elements | Computations for 100 elements | Computations for 1000 elements  |
-| -------------- | ---------------------------- | ----------------------------- | ------------------------------- |
-| **O(1)**       | 1                            | 1                             | 1                               |
-| **O(log N)**   | 3                            | 6                             | 9                               |
-| **O(N)**       | 10                           | 100                           | 1000                            |
-| **O(N log N)** | 30                           | 600                           | 9000                            |
-| **O(N^2)**     | 100                          | 10000                         | 1000000                         |
-| **O(2^N)**     | 1024                         | 1.26e+29                      | 1.07e+301                       |
-| **O(N!)**      | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
+| Big O Notation | Type        | Computations for 10 elements | Computations for 100 elements | Computations for 1000 elements  |
+| -------------- | ----------- | ---------------------------- | ----------------------------- | ------------------------------- |
+| **O(1)**       | Constant    | 1                            | 1                             | 1                               |
+| **O(log N)**   | Logarithmic | 3                            | 6                             | 9                               |
+| **O(N)**       | Linear      | 10                           | 100                           | 1000                            |
+| **O(N log N)** | n log(n)    | 30                           | 600                           | 9000                            |
+| **O(N^2)**     | Quadratic   | 100                          | 10000                         | 1000000                         |
+| **O(2^N)**     | Exponential | 1024                         | 1.26e+29                      | 1.07e+301                       |
+| **O(N!)**      | Factorial   | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
 
 ### Data Structure Operations Complexity
 
